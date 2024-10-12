@@ -15,6 +15,14 @@ import TabBasic from './src/react-native-elements/TabBasic';
 import PropsEjemplo from './src/navegacion/PropsEjemplo';
 import AxiosEjemplo from './src/navegacion/AxiosEjemplo';
 import AsyncStorageEjemplo from './src/navegacion/AsyncStorageEjemplo';
+import FirebaseLeer from './src/firebase-crud/FirebaseLeer';
+import FirebaseGuardar from './src/firebase-crud/FirebaseGuardar';
+import FirebaseBorrar from './src/firebase-crud/FirebaseBorrar';
+import FirebaseEditar from './src/firebase-crud/FirebaseEditar';
+import FirebaseLogin from './src/firebase-login/FirebaseLogin';
+import FirebaseRecuperarCuenta from './src/firebase-login/FirebaseRecuperarCuenta';
+import FirebaseCrearCuenta from './src/firebase-login/FirebaseCrearCuenta';
+
 
 
 const Stack = createNativeStackNavigator();
@@ -37,6 +45,13 @@ const App = () =>{
             <Stack.Screen name="Props" component={PropsEjemplo} />
             <Stack.Screen name="Axios" component={AxiosEjemplo} />
             <Stack.Screen name="Async" component={AsyncStorageEjemplo} />
+            <Stack.Screen name="FirebaseLeer" component={FirebaseLeer} />
+            <Stack.Screen name="FirebaseGuardar" component={FirebaseGuardar} />
+            <Stack.Screen name="FirebaseBorrar" component={FirebaseBorrar}/>
+            <Stack.Screen name="FirebaseEditar" component={FirebaseEditar}/>
+            <Stack.Screen name="FirebaseLogin" component={FirebaseLogin}/>
+            <Stack.Screen name="FirebaseRecuperarCuenta" component={FirebaseRecuperarCuenta}/>
+            <Stack.Screen name="FirebaseCrearCuenta" component={FirebaseCrearCuenta}/>
           </Stack.Navigator>
        </NavigationContainer>
    // </ScrollView>

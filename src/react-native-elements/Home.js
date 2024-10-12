@@ -59,7 +59,32 @@ const Home = ({navigation}) => {
         <ListItem.Content >
           <ListItem.Title>Async Storage</ListItem.Title>
         </ListItem.Content>
-      </ListItem>
+      </ListItem>   
+      <ListItem bottomDivider onPress={() => navigation.navigate('FirebaseLogin')}>
+        <ListItem.Content >
+          <ListItem.Title>Login con Firebase</ListItem.Title>
+        </ListItem.Content>
+      </ListItem>       
+      <ListItem bottomDivider onPress={() => navigation.navigate('FirebaseLeer')}>
+        <ListItem.Content >
+          <ListItem.Title>Firebase Leer</ListItem.Title>
+        </ListItem.Content>
+      </ListItem>   
+      <ListItem bottomDivider onPress={() => navigation.navigate('FirebaseGuardar')}>
+        <ListItem.Content >
+          <ListItem.Title>Firebase Guardar</ListItem.Title>
+        </ListItem.Content>
+      </ListItem>    
+      <ListItem bottomDivider onPress={() => navigation.navigate('FirebaseBorrar')}>
+        <ListItem.Content >
+          <ListItem.Title>Firebase Borrar</ListItem.Title>
+        </ListItem.Content>
+      </ListItem>          
+      <ListItem bottomDivider onPress={() => navigation.navigate('FirebaseEditar')}>
+        <ListItem.Content >
+          <ListItem.Title>Firebase Editar</ListItem.Title>
+        </ListItem.Content>
+      </ListItem>                                               
     </ScrollView>
   )
 }
